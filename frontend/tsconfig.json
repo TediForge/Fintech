@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@auth/*": ["./src/auth/*"],
+      "@components/*": ["./src/components/*"],
+      "@config/*": ["./src/config/*"],
+      "@context/*": ["./src/context/*"],
+      "@dashboard/*": ["./src/screens/dashboard/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@lib/*": ["./src/lib/*"],
+      "@providers/*": ["./src/providers/*"],
+      "@screens/*": ["./src/screens/*"],
+      "@app": ["./App"]
+    }
+  },
+  "extends": "expo/tsconfig.base"
+}

@@ -1,0 +1,322 @@
+{
+  "giftCards": [
+    {
+      "id": "1",
+      "brand": "Apple iTunes",
+      "slug": "apple-itunes",
+      "isActive": true,
+      "sortOrder": 1,
+      "imageId": "apple",
+      "countries": [
+        {
+          "countryId": "apple-us-001",
+          "countryCode": "US",
+          "countryName": "United States",
+          "flagUrl": "https://flagcdn.com/w80/us.png",
+          "isActive": true,
+          "currency": {
+            "code": "USD",
+            "symbol": "$",
+            "name": "US Dollar"
+          },
+          "rate": 1250,
+          "cardType": "eCode",
+          "orientation": "horizontal",
+          "requirements": {
+            "receiptRequired": false,
+            "requiresUpload": false,
+            "maxImageUpload": 0,
+            "confirmations": 2
+          },
+          "denominations": {
+            "type": "fixed",
+            "values": [
+              50,
+              100,
+              150
+            ],
+            "minimumAmount": 50,
+            "maximumAmount": 150,
+            "multiplesAllowed": true,
+            "multipleOf": 50
+          }
+        },
+        {
+          "countryId": "apple-us-002",
+          "countryCode": "US",
+          "countryName": "United States",
+          "flagUrl": "https://flagcdn.com/w80/us.png",
+          "isActive": true,
+          "currency": {
+            "code": "USD",
+            "symbol": "$",
+            "name": "US Dollar"
+          },
+          "rate": 1350,
+          "cardType": "physical",
+          "orientation": "horizontal",
+          "requirements": {
+            "receiptRequired": true,
+            "requiresUpload": true,
+            "maxImageUpload": 5,
+            "confirmations": 3
+          },
+          "denominations": {
+            "type": "fixed",
+            "values": [
+              100,
+              200,
+              500
+            ],
+            "minimumAmount": 100,
+            "maximumAmount": 500,
+            "multiplesAllowed": true,
+            "multipleOf": 100
+          }
+        },
+        {
+          "countryId": "apple-gb-001",
+          "countryCode": "GB",
+          "countryName": "United Kingdom",
+          "flagUrl": "https://flagcdn.com/w80/gb.png",
+          "isActive": false,
+          "currency": {
+            "code": "GBP",
+            "symbol": "£",
+            "name": "British Pound"
+          },
+          "rate": 1450,
+          "cardType": "eCode",
+          "orientation": "horizontal",
+          "requirements": {
+            "receiptRequired": false,
+            "requiresUpload": false,
+            "maxImageUpload": 0,
+            "confirmations": 2
+          },
+          "denominations": {
+            "type": "fixed",
+            "values": [
+              25,
+              50,
+              100
+            ],
+            "minimumAmount": 25,
+            "maximumAmount": 100,
+            "multiplesAllowed": true,
+            "multipleOf": 25
+          }
+        }
+      ],
+      "image": {
+        "url": "https://cdn.reloadly.com/giftcards/08ed62a9-52d3-47d2-9ad8-ae27d0a3f3a2.png",
+        "icon": null,
+        "displayMode": "cover",
+        "aspectRatio": "16:9"
+      }
+    },
+    {
+      "id": "2",
+      "brand": "Amazon",
+      "slug": "amazon",
+      "isActive": true,
+      "sortOrder": 2,
+      "imageId": "amazon",
+      "countries": [
+        {
+          "countryId": "amazon-us-001",
+          "countryCode": "US",
+          "countryName": "United States",
+          "flagUrl": "https://flagcdn.com/w80/us.png",
+          "isActive": true,
+          "currency": {
+            "code": "USD",
+            "symbol": "$",
+            "name": "US Dollar"
+          },
+          "rate": 1180,
+          "cardType": "physical",
+          "orientation": "horizontal",
+          "requirements": {
+            "receiptRequired": true,
+            "requiresUpload": true,
+            "maxImageUpload": 4,
+            "confirmations": 3
+          },
+          "denominations": {
+            "type": "fixed",
+            "values": [
+              25,
+              50,
+              100,
+              200
+            ],
+            "minimumAmount": 25,
+            "maximumAmount": 200,
+            "multiplesAllowed": true,
+            "multipleOf": 25
+          }
+        },
+        {
+          "countryId": "amazon-gb-001",
+          "countryCode": "GB",
+          "countryName": "United Kingdom",
+          "flagUrl": "https://flagcdn.com/w80/gb.png",
+          "isActive": true,
+          "currency": {
+            "code": "GBP",
+            "symbol": "£",
+            "name": "British Pound"
+          },
+          "rate": 1450,
+          "cardType": "physical",
+          "orientation": "horizontal",
+          "requirements": {
+            "receiptRequired": true,
+            "requiresUpload": true,
+            "maxImageUpload": 4,
+            "confirmations": 3
+          },
+          "denominations": {
+            "type": "fixed",
+            "values": [
+              25,
+              50,
+              100,
+              200
+            ],
+            "minimumAmount": 25,
+            "maximumAmount": 200,
+            "multiplesAllowed": true,
+            "multipleOf": 25
+          }
+        }
+      ],
+      "image": {
+        "url": "https://cdn.reloadly.com/giftcards/fbef9b57-e0b0-4ead-aee3-fdc2bc80e2db.png",
+        "icon": null,
+        "displayMode": "cover",
+        "aspectRatio": "16:9"
+      }
+    },
+    {
+      "id": "4",
+      "brand": "Google Play",
+      "slug": "google-play",
+      "isActive": true,
+      "sortOrder": 3,
+      "imageId": "googlePlay",
+      "countries": [
+        {
+          "countryId": "google-au-001",
+          "countryCode": "AU",
+          "countryName": "Australia",
+          "flagUrl": "https://flagcdn.com/w80/au.png",
+          "isActive": true,
+          "currency": {
+            "code": "AUD",
+            "symbol": "A$",
+            "name": "Australian Dollar"
+          },
+          "rate": 800,
+          "cardType": "eCode",
+          "orientation": "vertical",
+          "requirements": {
+            "receiptRequired": false,
+            "requiresUpload": false,
+            "maxImageUpload": 0,
+            "confirmations": 2
+          },
+          "denominations": {
+            "type": "range",
+            "values": [],
+            "minimumAmount": 20,
+            "maximumAmount": 500,
+            "multiplesAllowed": true,
+            "multipleOf": 10
+          }
+        }
+      ],
+      "image": {
+        "url": "https://cdn.reloadly.com/giftcards/da7374a4-a2b0-45ea-adae-a6ed972c4121.png",
+        "icon": null,
+        "displayMode": "cover",
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "images": {
+    "apple": {
+      "url": "https://cdn.reloadly.com/giftcards/08ed62a9-52d3-47d2-9ad8-ae27d0a3f3a2.png",
+      "icon": null,
+      "displayMode": "cover",
+      "aspectRatio": "16:9"
+    },
+    "amazon": {
+      "url": "https://cdn.reloadly.com/giftcards/fbef9b57-e0b0-4ead-aee3-fdc2bc80e2db.png",
+      "icon": null,
+      "displayMode": "cover",
+      "aspectRatio": "16:9"
+    },
+    "googlePlay": {
+      "url": "https://cdn.reloadly.com/giftcards/da7374a4-a2b0-45ea-adae-a6ed972c4121.png",
+      "icon": null,
+      "displayMode": "cover",
+      "aspectRatio": "16:9"
+    },
+    "xbox": {
+      "url": "https://cdn.reloadly.com/giftcards/4b54a713-3d88-482f-9cfc-b5ac174363f2.jpg",
+      "icon": null,
+      "displayMode": "cover",
+      "aspectRatio": "16:9"
+    },
+    "steam": {
+      "url": "https://cdn.reloadly.com/giftcards/795088c7-da49-4cfa-a631-e1cc2ff6b089.png",
+      "icon": null,
+      "displayMode": "cover",
+      "aspectRatio": "16:9"
+    },
+    "paysafecard": {
+      "url": "https://cdn.reloadly.com/giftcards/3def-2acd-5dbf-bdfe5-43ed-paysafecard.png",
+      "icon": null,
+      "displayMode": "cover",
+      "aspectRatio": "16:9"
+    },
+    "target": {
+      "url": "https://cdn.reloadly.com/giftcards/4ba0f8b8-2958-46aa-a47c-3698d8d12867.png",
+      "icon": null,
+      "displayMode": "cover",
+      "aspectRatio": "16:9"
+    },
+    "roblox": {
+      "url": "https://cdn.reloadly.com/giftcards/cbae97ec-9e1b-4da0-b03c-cbc353e0ed06.png",
+      "icon": null,
+      "displayMode": "cover",
+      "aspectRatio": "16:9"
+    },
+    "razer": {
+      "url": "https://cdn.reloadly.com/giftcards/89dfc34c-0bad-4fe6-be28-99a31551b9c1.png",
+      "icon": null,
+      "displayMode": "cover",
+      "aspectRatio": "16:9"
+    },
+    "walmart": {
+      "url": "https://cdn.reloadly.com/giftcards/-542b7abf-756a-44a7-8015-797d222977d5Walmart.jpg",
+      "icon": null,
+      "displayMode": "cover",
+      "aspectRatio": "16:9"
+    },
+    "sephora": {
+      "url": "https://cdn.reloadly.com/giftcards/cc58ae75-36e4-4275-922a-862d6afcf9c5.png",
+      "icon": null,
+      "displayMode": "cover",
+      "aspectRatio": "16:9"
+    },
+    "playstation": {
+      "url": "https://cdn.reloadly.com/giftcards/fbd667d8-3999-4d44-98fc-55cc59730e01.png",
+      "icon": null,
+      "displayMode": "cover",
+      "aspectRatio": "16:9"
+    }
+  }
+}

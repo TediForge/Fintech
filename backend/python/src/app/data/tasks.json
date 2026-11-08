@@ -1,0 +1,36 @@
+{
+  "dailyTasks": {
+    "airtime": {
+      "imageUrl": "https://cdn-icons-png.flaticon.com/128/17720/17720298.png",
+      "title": "Buy Airtime",
+      "subtitle": "Spend NGN 100+ on Airtime",
+      "screen": "AirtimeScreen",
+      "maxStep": 2,
+      "reward": 5
+    },
+    "fund": {
+      "imageUrl": "https://cdn-icons-png.flaticon.com/128/19020/19020182.png",
+      "title": "Fund Wallet",
+      "subtitle": "Deposit NGN 2,000 or more",
+      "screen": "AddMoneyScreen",
+      "maxStep": 1,
+      "reward": 20
+    },
+    "data_purchase": {
+      "imageUrl": "https://cdn-icons-png.flaticon.com/128/17697/17697847.png",
+      "title": "Data Bundle",
+      "subtitle": "Purchase data twice today",
+      "screen": "DataScreen",
+      "maxStep": 2,
+      "reward": 20
+    },
+    "electricity": {
+      "imageUrl": "https://cdn-icons-png.flaticon.com/128/15355/15355024.png",
+      "title": "Pay Utility",
+      "subtitle": "Electricity bill NGN 1,000+",
+      "screen": "ElectricityScreen",
+      "maxStep": 1,
+      "reward": 20
+    }
+  }
+}

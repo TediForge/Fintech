@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tediforge-fintech-api"
+version = "0.1.0"
+description = "TediForge Fintech API"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiosmtplib>=3.0",
+    "firebase-admin>=6.5",
+    "reportlab>=4.2",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["app*", "database*"]
+
+[tool.setuptools.package-data]
+"app.services.notification.mail" = ["templates/*.html"]
+"app.data" = ["*.json"]
+"database.db_01" = ["schema.sql", "migrations/*.sql"]
+"database.db_02" = ["schema.sql", "migrations/*.sql"]

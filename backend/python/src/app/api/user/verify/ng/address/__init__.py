@@ -1,0 +1,1 @@
+"""Nigerian address verification endpoint."""

@@ -1,0 +1,1 @@
+React Native fintech app for payments, savings, transfers, and digital banking (Tediwave).

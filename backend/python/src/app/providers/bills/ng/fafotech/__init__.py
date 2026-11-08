@@ -1,0 +1,41 @@
+"""Public Fafotech provider interface."""
+
+from app.providers.bills.ng.fafotech.client import (
+    DataPurchaseInput,
+    FafotechClient,
+    NormalizedDataPlan,
+    ProviderResponse,
+    get_data_plan_catalog,
+    get_fafotech_balance,
+    get_fafotech_client,
+    get_fafotech_provider_status,
+    purchase_airtime,
+    purchase_cable,
+    purchase_data,
+    purchase_electricity,
+    query_airtime,
+    query_cable,
+    query_electricity,
+    validate_cable,
+    validate_meter,
+)
+
+__all__ = [
+    "DataPurchaseInput",
+    "FafotechClient",
+    "NormalizedDataPlan",
+    "ProviderResponse",
+    "get_data_plan_catalog",
+    "get_fafotech_balance",
+    "get_fafotech_client",
+    "get_fafotech_provider_status",
+    "purchase_airtime",
+    "purchase_cable",
+    "purchase_data",
+    "purchase_electricity",
+    "query_airtime",
+    "query_cable",
+    "query_electricity",
+    "validate_cable",
+    "validate_meter",
+]

@@ -1,0 +1,1 @@
+"""Nigerian BVN verification endpoint."""

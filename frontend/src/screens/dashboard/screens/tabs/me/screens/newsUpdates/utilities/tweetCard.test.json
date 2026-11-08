@@ -1,0 +1,47 @@
+﻿[
+  {
+    "id": "tweet-001",
+    "author": "Product Team",
+    "handle": "@productteam",
+    "avatar": "https://cdn-icons-png.flaticon.com/128/3135/3135715.png",
+    "createdAt": "2026-08-01T12:00:00Z",
+    "text": "We just shipped a big update: faster payments, better analytics, and stronger security. Stay tuned for more improvements!",
+    "mediaUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    "likes": 142,
+    "reposts": 28,
+    "replies": 12,
+    "views": 3400,
+    "isLiked": false,
+    "isReposted": false
+  },
+  {
+    "id": "tweet-002",
+    "author": "Security",
+    "handle": "@secops",
+    "avatar": "https://cdn-icons-png.flaticon.com/128/3135/3135768.png",
+    "createdAt": "2026-08-02T09:30:00Z",
+    "text": "Your session is now more secure with biometric verification and fraud detection across every transaction.",
+    "mediaUrl": null,
+    "likes": 89,
+    "reposts": 14,
+    "replies": 5,
+    "views": 1820,
+    "isLiked": true,
+    "isReposted": false
+  },
+  {
+    "id": "tweet-003",
+    "author": "Support",
+    "handle": "@helpdesk",
+    "avatar": "https://cdn-icons-png.flaticon.com/128/3135/3135823.png",
+    "createdAt": "2026-08-03T07:45:00Z",
+    "text": "Need help? Our 24/7 support team is ready to assist with your wallet, payments, and account setup.",
+    "mediaUrl": null,
+    "likes": 45,
+    "reposts": 2,
+    "replies": 19,
+    "views": 950,
+    "isLiked": false,
+    "isReposted": false
+  }
+]

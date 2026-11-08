@@ -1,0 +1,88 @@
+{
+  "expenseCategories": {
+    "airtime": {
+      "group": "bills",
+      "icon": "call-outline",
+      "name": "Airtime",
+      "aliases": ["airtime", "recharge"]
+    },
+    "data": {
+      "group": "bills",
+      "icon": "wifi-outline",
+      "name": "Data",
+      "aliases": ["data", "internet"]
+    },
+    "electricity": {
+      "group": "bills",
+      "icon": "bulb-outline",
+      "name": "Electricity",
+      "aliases": ["electricity", "power", "prepaid"]
+    },
+    "cableTv": {
+      "group": "bills",
+      "icon": "tv-outline",
+      "name": "Cable TV",
+      "aliases": ["cable", "tv", "dstv", "gotv", "startimes"]
+    },
+    "buyGiftcard": {
+      "group": "lifestyle",
+      "icon": "gift-outline",
+      "name": "Buy Giftcard",
+      "aliases": ["buy giftcard", "giftcard purchase", "gift card purchase"]
+    },
+    "sellGiftcard": {
+      "group": "lifestyle",
+      "icon": "wallet-outline",
+      "name": "Sell Giftcard",
+      "aliases": ["sell giftcard", "giftcard sale", "gift card sale"]
+    },
+    "buyCrypto": {
+      "group": "lifestyle",
+      "icon": "logo-bitcoin",
+      "name": "Buy Crypto",
+      "aliases": ["buy crypto", "crypto purchase"]
+    },
+    "sellCrypto": {
+      "group": "lifestyle",
+      "icon": "cash-outline",
+      "name": "Sell Crypto",
+      "aliases": ["sell crypto", "crypto sale"]
+    },
+    "getCashback": {
+      "group": "lifestyle",
+      "icon": "pricetag-outline",
+      "name": "Get Cashback",
+      "aliases": ["cashback", "cash back"]
+    },
+    "spendAndSave": {
+      "group": "lifestyle",
+      "icon": "save-outline",
+      "name": "Spend & Save",
+      "aliases": ["spend & save", "spend and save", "savings"]
+    },
+    "transfer": {
+      "group": "transfers",
+      "icon": "swap-horizontal-outline",
+      "name": "Transfer",
+      "aliases": ["transfer", "send money", "bank transfer"]
+    },
+    "invoices": {
+      "group": "services",
+      "icon": "document-text-outline",
+      "name": "Invoices",
+      "aliases": ["invoice", "invoices"]
+    }
+  },
+  "incomeCategories": {
+    "deposit": {
+      "icon": "arrow-down-circle-outline",
+      "name": "Deposit",
+      "aliases": ["deposit", "fund wallet", "cash deposit"]
+    },
+    "rewards": {
+      "icon": "trophy-outline",
+      "name": "Rewards",
+      "aliases": ["reward", "rewards", "cashback reward", "bonus"]
+    }
+  }
+}

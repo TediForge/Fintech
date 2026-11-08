@@ -1,0 +1,39 @@
+# Environment secrets
+.env
+.env.*
+!.env.example
+**/google-services.json
+**/*service-account*.json
+**/credentials.json
+**/privatekey.*
+backend/depreciated/php/core/tools/tcpdf/examples/data/cert/tcpdf.crt
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Dependencies, caches, and generated output
+**/node_modules/
+**/.venv/
+**/venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.ruff_cache/
+**/.mypy_cache/
+**/.next/
+**/.expo/
+**/dist/
+**/build/
+**/coverage/
+
+# Local databases and runtime logs
+*.sqlite
+*.sqlite3
+*.db
+*.log
+**/logs/
+
+# Deprecated legacy backend archive
+backend/depreciated/

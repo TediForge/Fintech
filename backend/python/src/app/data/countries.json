@@ -1,0 +1,17 @@
+{
+  "NG": {
+    "countryCode": "NG",
+    "countryName": "Nigeria",
+    "dialCode": "+234"
+  },
+  "GH": {
+    "countryCode": "GH",
+    "countryName": "Ghana",
+    "dialCode": "+233"
+  },
+  "KE": {
+    "countryCode": "KE",
+    "countryName": "Kenya",
+    "dialCode": "+254"
+  }
+}

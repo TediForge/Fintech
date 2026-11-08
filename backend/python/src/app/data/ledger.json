@@ -1,0 +1,33 @@
+{
+  "metadataAllowedKeys": {
+    "airtime": ["phoneNumber", "network"],
+    "data": ["phoneNumber", "network", "planName", "planId"],
+    "transfer": [
+      "recipientName",
+      "recipientAccountNumber",
+      "recipientBankCode",
+      "recipientBankName",
+      "originatorName",
+      "originatorAccountNumber",
+      "originatorBankName"
+    ],
+    "card deposit": [
+      "cardLast4",
+      "cardType",
+      "cardIssuer",
+      "customerName",
+      "customerEmail",
+      "customerPhone"
+    ],
+    "cable tv": ["smartcardNumber", "provider", "planName", "customerName"],
+    "electricity": [
+      "meterNumber",
+      "meterType",
+      "disco",
+      "token",
+      "units",
+      "customerAddress"
+    ],
+    "refund": ["originalReference", "reason"]
+  }
+}

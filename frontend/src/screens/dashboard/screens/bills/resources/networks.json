@@ -1,0 +1,26 @@
+[
+  {
+    "id": "MTN",
+    "name": "MTN",
+    "logo": "https://paysmart.com.ng/assets/images/mtn-logo.png",
+    "prefixes": ["0703", "0803", "0903", "0806", "0706", "0810", "0813", "0814", "0816", "0913", "0916"]
+  },
+  {
+    "id": "GLO",
+    "name": "GLO",
+    "logo": "https://paysmart.com.ng/assets/images/glo-logo.png",
+    "prefixes": ["0705", "0805", "0807", "0811", "0815", "0905", "0915"]
+  },
+  {
+    "id": "AIRTEL",
+    "name": "AIRTEL",
+    "logo": "https://paysmart.com.ng/assets/images/airtel-logo.png",
+    "prefixes": ["0701", "0802", "0808", "0911", "0708", "0812", "0901", "0902", "0904", "0907", "0912"]
+  },
+  {
+    "id": "9MOBILE",
+    "name": "9MOBILE",
+    "logo": "https://paysmart.com.ng/assets/images/9mobile-logo.png",
+    "prefixes": ["0809", "0817", "0818", "0908", "0909"]
+  }
+]

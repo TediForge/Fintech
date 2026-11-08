@@ -1,0 +1,3 @@
+# TODO
+
+- [ ] Implement Panic Mode as a frontend-only safety mode: let users configure a display-only panic balance, discreet tilt activation, and face verification; while active, hide real balances, account and personal details, cards, beneficiaries, statements, receipts, analytics, and real transaction history; show only a sanitized presentation balance/history; block navigation to every debit-capable action including transfers, withdrawals, bills, airtime/data, QR payments, card funding/management, savings, and investments; keep backend balances, ledgers, APIs, authorization, and transaction validation unchanged; allow incoming credit notifications; require the activation gesture and successful face verification to exit, with PIN or approved recovery fallback.

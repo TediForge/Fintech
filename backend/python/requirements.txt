@@ -1,0 +1,16 @@
+fastapi>=0.115
+python-multipart>=0.0.20
+uvicorn[standard]>=0.30
+pydantic-settings>=2.6
+sqlalchemy>=2.0
+alembic>=1.14
+psycopg[binary]>=3.2
+pytest>=8.3
+groq>=0.11
+python-dotenv>=1.0
+cryptography>=43
+reportlab>=4.2
+aiosmtplib>=3.0
+firebase-admin>=6.5
+PyJWT>=2.9
+openpyxl>=3.1

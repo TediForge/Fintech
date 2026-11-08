@@ -1,0 +1,18 @@
+{
+  "requiredKeys": {
+    "transfer": ["accountNumber", "bankCode", "bankName", "accountName"],
+    "airtime": ["phoneNumber", "network"],
+    "data": ["phoneNumber", "network"],
+    "electricity": ["serviceCode", "meterNumber", "meterType"],
+    "cable": ["serviceCode", "smartCardNumber"],
+    "giftcard": ["productCode", "recipientEmail"]
+  },
+  "identityKeys": {
+    "transfer": ["accountNumber", "bankCode"],
+    "airtime": ["phoneNumber", "network"],
+    "data": ["phoneNumber", "network"],
+    "electricity": ["serviceCode", "meterNumber", "meterType"],
+    "cable": ["serviceCode", "smartCardNumber"],
+    "giftcard": ["productCode", "recipientEmail"]
+  }
+}

@@ -1,0 +1,1 @@
+"""Core fintech domain logic."""

@@ -1,0 +1,105 @@
+{
+  "title": "Business verification",
+  "recordType": "business",
+  "submitAction": "submitBusiness",
+  "lookupAction": "lookupBusiness",
+  "lookupField": "companyNumber",
+  "lookupSummary": "Enter the CAC registration number to retrieve verified company details.",
+  "completeSummary": "Confirm the company details and add any information CAC could not provide.",
+  "lookupSubmitLabel": "Find business",
+  "lookupSubmittingLabel": "Searching company register...",
+  "lookupBackLabel": "Change registration number",
+  "summary": "Enter your CAC registration number to retrieve company details.",
+  "icon": "BriefcaseBusiness",
+  "identificationTypes": [
+    { "value": "NATIONAL_ID", "label": "National identity card" },
+    { "value": "VOTERS_CARD", "label": "Voter's card" },
+    { "value": "DRIVERS_LICENSE", "label": "Driver's licence" }
+  ],
+  "entityTypes": {
+    "BUSINESS_NAME": {
+      "label": "Business name",
+      "matchTerms": ["BUSINESS NAME", "BUSINESS_NAME", "PROPRIETOR", "SOLE PROPRIETOR"],
+      "taxProfile": "business_name",
+      "roles": ["Proprietor", "Partner"],
+      "documents": [
+        { "name": "businessRegistrationCertificate", "label": "CAC business name certificate", "required": true },
+        { "name": "statusReport", "label": "CAC status report", "required": true }
+      ]
+    },
+    "PRIVATE_LIMITED": {
+      "label": "Private company limited by shares",
+      "matchTerms": ["PRIVATE COMPANY", "PRIVATE LIMITED", "LIMITED", "LTD", "COMPANY", "LIMITED BY SHARES"],
+      "taxProfile": "company",
+      "roles": ["Director", "Secretary"],
+      "documents": [
+        { "name": "incorporationCertificate", "label": "Certificate of incorporation", "required": true },
+        { "name": "statusReport", "label": "CAC status report", "required": true },
+        { "name": "memart", "label": "Memorandum and articles of association (MEMART)", "required": true }
+      ]
+    },
+    "PUBLIC_LIMITED": {
+      "label": "Public company limited by shares",
+      "matchTerms": ["PUBLIC COMPANY", "PUBLIC LIMITED", "PLC"],
+      "taxProfile": "company",
+      "roles": ["Director", "Secretary"],
+      "documents": [
+        { "name": "incorporationCertificate", "label": "Certificate of incorporation", "required": true },
+        { "name": "statusReport", "label": "CAC status report", "required": true },
+        { "name": "memart", "label": "Memorandum and articles of association (MEMART)", "required": true }
+      ]
+    },
+    "LIMITED_BY_GUARANTEE": {
+      "label": "Company limited by guarantee",
+      "matchTerms": ["LIMITED BY GUARANTEE", "COMPANY LIMITED BY GUARANTEE"],
+      "taxProfile": "company_limited_by_guarantee",
+      "roles": ["Director", "Guarantor"],
+      "documents": [
+        { "name": "incorporationCertificate", "label": "Certificate of incorporation", "required": true },
+        { "name": "statusReport", "label": "CAC status report", "required": true },
+        { "name": "memart", "label": "Memorandum and articles of association (MEMART)", "required": true }
+      ]
+    },
+    "INCORPORATED_TRUSTEES": {
+      "label": "Incorporated trustees",
+      "matchTerms": ["INCORPORATED TRUSTEES", "TRUSTEES", "IT"],
+      "taxProfile": "incorporated_trustees",
+      "roles": ["Partner", "Designated Partner"],
+      "documents": [
+        { "name": "incorporationCertificate", "label": "Certificate of incorporation", "required": true },
+        { "name": "statusReport", "label": "CAC status report", "required": true },
+        { "name": "constitution", "label": "Constitution", "required": true }
+      ]
+    },
+    "LLP": {
+      "label": "Limited liability partnership",
+      "matchTerms": ["LIMITED LIABILITY PARTNERSHIP", "LLP"],
+      "taxProfile": "limited_liability_partnership",
+      "roles": ["Partner", "Designated Partner"],
+      "documents": [
+        { "name": "partnershipRegistrationCertificate", "label": "CAC partnership registration certificate", "required": true },
+        { "name": "statusReport", "label": "CAC status report", "required": true }
+      ]
+    },
+    "LP": {
+      "label": "Limited partnership",
+      "matchTerms": ["LIMITED PARTNERSHIP", "LP"],
+      "taxProfile": "limited_partnership",
+      "roles": ["General Partner", "Limited Partner"],
+      "documents": [
+        { "name": "partnershipRegistrationCertificate", "label": "CAC partnership registration certificate", "required": true },
+        { "name": "statusReport", "label": "CAC status report", "required": true }
+      ]
+    }
+  },
+  "fields": [
+    { "name": "companyNumber", "label": "CAC registration number", "placeholder": "RC or BN number", "step": "lookup", "required": true },
+    { "name": "companyName", "label": "Registered business name", "placeholder": "Enter the name shown on CAC records", "step": "complete", "providerField": "approvedName", "required": true, "wide": true },
+    { "name": "classificationName", "label": "CAC classification", "type": "fixed", "step": "complete", "providerField": "classificationName", "required": false },
+    { "name": "taxId", "label": "Tax identification number", "placeholder": "Enter the business tax ID", "step": "complete", "providerField": "taxId", "required": false },
+    { "name": "companyRegistrationDate", "label": "CAC registration date", "type": "fixed", "step": "complete", "providerField": "companyRegistrationDate", "required": false },
+    { "name": "natureOfBusiness", "label": "Nature of business", "type": "fixed", "step": "complete", "providerField": "natureOfBusiness", "required": false, "wide": true },
+    { "name": "documents", "label": "CAC documents", "type": "businessDocuments", "step": "complete", "required": true },
+    { "name": "keyPersons", "label": "Key people", "type": "businessKeyPersons", "step": "complete", "required": true }
+  ]
+}

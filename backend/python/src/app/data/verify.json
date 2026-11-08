@@ -1,0 +1,621 @@
+{
+  "NG": {
+    "countryCode": "NG",
+    "countryName": "Nigeria",
+    "tiers": {
+      "tier1": {
+        "requirements": {
+          "identity": {
+            "type": "group",
+            "condition": "oneOf",
+            "required": true,
+            "fields": {
+              "bvn": {
+                "type": "text",
+                "minLength": 11,
+                "maxLength": 11
+              },
+              "nin": {
+                "type": "text",
+                "minLength": 11,
+                "maxLength": 11
+              }
+            }
+          }
+        },
+        "description": "Basic identity verification"
+      },
+      "tier2": {
+        "extends": "tier1",
+        "requirements": {
+          "identity": {
+            "type": "group",
+            "condition": "allOf",
+            "required": true,
+            "fields": {
+              "nin": {
+                "type": "text",
+                "minLength": 11,
+                "maxLength": 11
+              },
+              "bvn": {
+                "type": "text",
+                "minLength": 11,
+                "maxLength": 11
+              }
+            }
+          }
+        },
+        "description": "Complete identity verification"
+      },
+      "tier3": {
+        "extends": "tier2",
+        "requirements": {
+          "address": {
+            "type": "object",
+            "required": true,
+            "fields": {
+              "line1": {
+                "type": "text",
+                "required": true
+              },
+              "lga": {
+                "type": "text",
+                "required": true
+              },
+              "state": {
+                "type": "text",
+                "required": true
+              },
+              "postalCode": {
+                "type": "text",
+                "required": false
+              },
+              "country": {
+                "type": "text",
+                "required": true
+              }
+            }
+          },
+          "addressVerification": {
+            "type": "object",
+            "required": true,
+            "fields": {
+              "documentType": {
+                "type": "select",
+                "options": [
+                  "utilityBill",
+                  "wasteBill",
+                  "bankStatement",
+                  "tenancyAgreement"
+                ],
+                "optionLabels": {
+                  "utilityBill": "Utility Bill",
+                  "wasteBill": "Waste Bill",
+                  "bankStatement": "Bank Statement",
+                  "tenancyAgreement": "Tenancy Agreement"
+                },
+                "required": true
+              },
+              "documentFile": {
+                "type": "file",
+                "acceptedFormats": [
+                  "jpeg",
+                  "png",
+                  "pdf"
+                ],
+                "required": true
+              }
+            },
+            "income": {
+              "type": "object",
+              "required": true,
+              "fields": {
+                "occupation": {
+                  "type": "text",
+                  "required": true
+                },
+                "sourceOfFunds": {
+                  "type": "text",
+                  "required": true
+                },
+                "incomeCurrency": {
+                  "type": "text",
+                  "required": true
+                },
+                "incomeRange": {
+                  "type": "text",
+                  "required": true
+                },
+                "documents": {
+                  "type": "array",
+                  "required": true
+                }
+              }
+            }
+          }
+        },
+        "description": "Address verification"
+      },
+      "merchant": {
+        "extends": "tier3",
+        "requirements": {
+          "incorporationCertificate": {
+            "type": "file",
+            "acceptedFormats": [
+              "jpeg",
+              "png",
+              "pdf"
+            ],
+            "required": true
+          },
+          "statusReport": {
+            "type": "file",
+            "acceptedFormats": [
+              "pdf"
+            ],
+            "required": true
+          },
+          "storeFrontImage": {
+            "type": "file",
+            "acceptedFormats": [
+              "jpeg",
+              "png",
+              "pdf"
+            ],
+            "required": true
+          },
+          "incorporationNumber": {
+            "type": "text",
+            "required": true
+          },
+          "companyOfficer": {
+            "type": "object",
+            "required": true,
+            "fields": {
+              "nin": {
+                "type": "text",
+                "required": true,
+                "minLength": 11,
+                "maxLength": 11
+              },
+              "phoneNumber": {
+                "type": "text",
+                "required": true
+              },
+              "otherNames": {
+                "type": "text",
+                "required": false
+              },
+              "documents": {
+                "type": "object",
+                "required": true,
+                "fields": {
+                  "ninSlipFront": {
+                    "type": "file",
+                    "acceptedFormats": [
+                      "jpeg",
+                      "png",
+                      "pdf"
+                    ],
+                    "required": true
+                  },
+                  "ninSlipBack": {
+                    "type": "file",
+                    "acceptedFormats": [
+                      "jpeg",
+                      "png",
+                      "pdf"
+                    ],
+                    "required": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "description": "Merchant verification requirements"
+      }
+    },
+    "programIdentifier": "prog_95ae00c3e8219b5bcecbcf71"
+  },
+  "GH": {
+    "countryCode": "GH",
+    "countryName": "Ghana",
+    "tiers": {
+      "tier1": {
+        "requirements": {
+          "ghanaCard": {
+            "type": "text",
+            "required": true
+          }
+        },
+        "description": "Basic identity verification"
+      },
+      "tier2": {
+        "extends": "tier1",
+        "requirements": {
+          "identity": {
+            "type": "group",
+            "condition": "allOf",
+            "required": true,
+            "fields": {
+              "ghanaCard": {
+                "type": "text",
+                "required": true
+              }
+            }
+          }
+        },
+        "description": "Complete identity verification"
+      },
+      "tier3": {
+        "extends": "tier2",
+        "requirements": {
+          "address": {
+            "type": "object",
+            "required": true,
+            "fields": {
+              "line1": {
+                "type": "text",
+                "required": true
+              },
+              "lga": {
+                "type": "text",
+                "required": true
+              },
+              "state": {
+                "type": "text",
+                "required": true
+              },
+              "postalCode": {
+                "type": "text",
+                "required": false
+              },
+              "country": {
+                "type": "text",
+                "required": true
+              }
+            }
+          },
+          "addressVerification": {
+            "type": "object",
+            "required": true,
+            "fields": {
+              "documentType": {
+                "type": "select",
+                "options": [
+                  "utilityBill",
+                  "wasteBill",
+                  "bankStatement",
+                  "tenancyAgreement"
+                ],
+                "optionLabels": {
+                  "utilityBill": "Utility Bill",
+                  "wasteBill": "Waste Bill",
+                  "bankStatement": "Bank Statement",
+                  "tenancyAgreement": "Tenancy Agreement"
+                },
+                "required": true
+              },
+              "documentFile": {
+                "type": "file",
+                "acceptedFormats": [
+                  "jpeg",
+                  "png",
+                  "pdf"
+                ],
+                "required": true
+              }
+            }
+          }
+        },
+        "description": "Address verification"
+      },
+      "merchant": {
+        "extends": "tier3",
+        "requirements": {
+          "incorporationCertificate": {
+            "type": "file",
+            "acceptedFormats": [
+              "jpeg",
+              "png",
+              "pdf"
+            ],
+            "required": true
+          },
+          "statusReport": {
+            "type": "file",
+            "acceptedFormats": [
+              "pdf"
+            ],
+            "required": true
+          },
+          "storeFrontImage": {
+            "type": "file",
+            "acceptedFormats": [
+              "jpeg",
+              "png",
+              "pdf"
+            ],
+            "required": true
+          },
+          "incorporationNumber": {
+            "type": "text",
+            "required": true
+          },
+          "companyOfficer": {
+            "type": "object",
+            "required": true,
+            "fields": {
+              "firstName": {
+                "type": "text",
+                "required": true
+              },
+              "lastName": {
+                "type": "text",
+                "required": true
+              },
+              "dob": {
+                "type": "text",
+                "required": true
+              },
+              "otherNames": {
+                "type": "text",
+                "required": false
+              },
+              "identity": {
+                "type": "object",
+                "required": true,
+                "fields": {
+                  "type": {
+                    "type": "select",
+                    "options": [
+                      "BVN",
+                      "NIN",
+                      "CAC",
+                      "TIN",
+                      "PASSPORT"
+                    ],
+                    "required": true
+                  },
+                  "number": {
+                    "type": "text",
+                    "required": true
+                  }
+                }
+              },
+              "documents": {
+                "type": "object",
+                "required": true,
+                "fields": {
+                  "idFront": {
+                    "type": "file",
+                    "acceptedFormats": [
+                      "jpeg",
+                      "png",
+                      "pdf"
+                    ],
+                    "required": true
+                  },
+                  "idBack": {
+                    "type": "file",
+                    "acceptedFormats": [
+                      "jpeg",
+                      "png",
+                      "pdf"
+                    ],
+                    "required": false
+                  }
+                }
+              }
+            }
+          }
+        },
+        "description": "Merchant verification requirements"
+      }
+    },
+    "programIdentifier": "prog_d78a22184758d834f33ee5da"
+  },
+  "KE": {
+    "countryCode": "KE",
+    "countryName": "Kenya",
+    "tiers": {
+      "tier1": {
+        "requirements": {
+          "idNumber": {
+            "type": "text",
+            "required": true,
+            "minLength": 6,
+            "maxLength": 12
+          }
+        },
+        "description": "Basic identity verification"
+      },
+      "tier2": {
+        "extends": "tier1",
+        "requirements": {
+          "identity": {
+            "type": "group",
+            "condition": "allOf",
+            "required": true,
+            "fields": {
+              "idNumber": {
+                "type": "text",
+                "required": true,
+                "minLength": 6,
+                "maxLength": 12
+              }
+            }
+          }
+        },
+        "description": "Complete identity verification"
+      },
+      "tier3": {
+        "extends": "tier2",
+        "requirements": {
+          "address": {
+            "type": "object",
+            "required": true,
+            "fields": {
+              "line1": {
+                "type": "text",
+                "required": true
+              },
+              "lga": {
+                "type": "text",
+                "required": true
+              },
+              "state": {
+                "type": "text",
+                "required": true
+              },
+              "postalCode": {
+                "type": "text",
+                "required": false
+              },
+              "country": {
+                "type": "text",
+                "required": true
+              }
+            }
+          },
+          "addressVerification": {
+            "type": "object",
+            "required": true,
+            "fields": {
+              "documentType": {
+                "type": "select",
+                "options": [
+                  "utilityBill",
+                  "wasteBill",
+                  "bankStatement",
+                  "tenancyAgreement"
+                ],
+                "optionLabels": {
+                  "utilityBill": "Utility Bill",
+                  "wasteBill": "Waste Bill",
+                  "bankStatement": "Bank Statement",
+                  "tenancyAgreement": "Tenancy Agreement"
+                },
+                "required": true
+              },
+              "documentFile": {
+                "type": "file",
+                "acceptedFormats": [
+                  "jpeg",
+                  "png",
+                  "pdf"
+                ],
+                "required": true
+              }
+            }
+          }
+        },
+        "description": "Address verification"
+      },
+      "merchant": {
+        "extends": "tier3",
+        "requirements": {
+          "incorporationCertificate": {
+            "type": "file",
+            "acceptedFormats": [
+              "jpeg",
+              "png",
+              "pdf"
+            ],
+            "required": true
+          },
+          "statusReport": {
+            "type": "file",
+            "acceptedFormats": [
+              "pdf"
+            ],
+            "required": true
+          },
+          "storeFrontImage": {
+            "type": "file",
+            "acceptedFormats": [
+              "jpeg",
+              "png",
+              "pdf"
+            ],
+            "required": true
+          },
+          "incorporationNumber": {
+            "type": "text",
+            "required": true
+          },
+          "companyOfficer": {
+            "type": "object",
+            "required": true,
+            "fields": {
+              "firstName": {
+                "type": "text",
+                "required": true
+              },
+              "lastName": {
+                "type": "text",
+                "required": true
+              },
+              "dob": {
+                "type": "text",
+                "required": true
+              },
+              "otherNames": {
+                "type": "text",
+                "required": false
+              },
+              "identity": {
+                "type": "object",
+                "required": true,
+                "fields": {
+                  "type": {
+                    "type": "select",
+                    "options": [
+                      "BVN",
+                      "NIN",
+                      "CAC",
+                      "TIN",
+                      "PASSPORT"
+                    ],
+                    "required": true
+                  },
+                  "number": {
+                    "type": "text",
+                    "required": true
+                  }
+                }
+              },
+              "documents": {
+                "type": "object",
+                "required": true,
+                "fields": {
+                  "idFront": {
+                    "type": "file",
+                    "acceptedFormats": [
+                      "jpeg",
+                      "png",
+                      "pdf"
+                    ],
+                    "required": true
+                  },
+                  "idBack": {
+                    "type": "file",
+                    "acceptedFormats": [
+                      "jpeg",
+                      "png",
+                      "pdf"
+                    ],
+                    "required": false
+                  }
+                }
+              }
+            }
+          }
+        },
+        "description": "Merchant verification requirements"
+      }
+    }
+  }
+}
